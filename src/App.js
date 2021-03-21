@@ -4,7 +4,9 @@ import Header from "./components/Header/Header";
 import SearchFilm from "./components/SearchFilm/SearchFilm";
 import FilmCards from "./components/FIlmCards/FilmCards";
 import FilmDetails from "./components/FilmDetails/FilmDetails";
-import {BrowserRouter as Router, Route, NavLink} from "react-router-dom";
+import {BrowserRouter as Router, Route, NavLink, Switch} from "react-router-dom";
+import Registration from './components/Registration/Registration';
+import Join from './components/Join/Join';
 
 export default class App extends React.Component {
     state = {
@@ -138,9 +140,13 @@ export default class App extends React.Component {
                     <Header allFilms={this.state.films}/>
                     <SearchFilm searchHandler={this.searchHandler}/>
                     <Route exact path={'/'} render={(match) => <FilmCards searchFilter={this.state.searchFilter} renderItems={this.state.films}/>}/>
-                    <Route path={`/:id`} render={({match}) => {
-                        return <FilmDetails ChangeInputData={this.ChangeInputData} addNewComment={this.addNewComment} film={match.params.id} changeRaiting={this.changeFilmRaiting} films={this.state.films}/>
-                    }}/>
+                    <Switch>
+                        <Route path={'/join'} component={Join}/>
+                        <Route path={'/reg'} component={Registration}/>
+                        <Route path={`/:id`} render={({match}) => {
+                            return <FilmDetails ChangeInputData={this.ChangeInputData} addNewComment={this.addNewComment} film={match.params.id} changeRaiting={this.changeFilmRaiting} films={this.state.films}/>
+                        }}/>
+                    </Switch>
                 </div>
             </Router>
         )
