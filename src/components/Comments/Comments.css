@@ -1,0 +1,17 @@
+.CommentContainer {
+    max-width: 562px;
+    margin: 0 auto;
+}
+
+.Comments h2 {
+    color: #ff0000;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.Comments textarea {
+    display: block;
+    margin: 0 auto;
+}

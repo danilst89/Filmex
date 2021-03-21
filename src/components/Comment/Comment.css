@@ -1,0 +1,64 @@
+.Comment2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Comment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Comment h4 {
+    color: #ff0000;
+}
+
+.Comment p {
+    color: #fff;
+}
+
+.CommentComment {
+    color: #fff;
+    margin-left: 30px;
+}
+
+.redButtonForReviews {
+    display: block;
+    height: 41px;
+    width: 125px;
+    background: red;
+    color: #fff;
+    border: none;
+    margin: 30px auto 0 auto;
+    cursor: pointer;
+}
+
+.like {
+    color: #fff;
+    text-align: right;
+    cursor: pointer;
+}
+
+.dislike {
+    color: #fff;
+    text-align: right;
+    cursor: pointer;
+}
+
+.colorLikeWhite {
+    background: #fff;
+}
+
+.verticalFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.LikeAndDislike {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,39 @@
+.cardImg {
+    display: block;
+    width: 300px;
+    height: 450px;
+    margin: 0 auto;
+}
+
+.FilmCardsMain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+}
+
+.cardContainer {
+    width: 33%;
+}
+
+.cardNameContainer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.cardName {
+    text-decoration: none;
+    color: #fff;
+}
+
+.cardName:hover {
+    text-decoration: underline;
+}
+
+.cardYear {
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}

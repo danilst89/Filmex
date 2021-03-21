@@ -1,0 +1,53 @@
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainHeader {
+    background: black;
+}
+
+.logo .logotype {
+    text-align: center;
+}
+
+.logo .logotype a {
+    color: #ff0000;
+    text-decoration: none;
+    font-size: 60px;
+}
+
+.logo a, .logo div{
+    width: 33%;
+}
+
+.LogOrReg {
+    text-align: right;
+}
+
+.LogOrReg a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.LogOrReg a:nth-child(2) {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: red;
+}
+
+.LogOrReg a:hover {
+    text-decoration: underline;
+}
+
+.randomMovie {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.randomMovie:hover {
+    text-decoration: underline;
+}

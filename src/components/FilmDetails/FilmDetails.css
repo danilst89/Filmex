@@ -1,0 +1,63 @@
+.FilmDetailsMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.FilmDetailsList li {
+    color: #fff;
+    margin-top: 25px;
+    font-size: 20px;
+    list-style: none;
+}
+
+.FilmDetailsImg {
+    width: 400px;
+    height: 550px;
+    display: block;
+}
+
+.wrapImg {
+    position: relative;
+    display: inline-block;
+}
+
+.FilmDetailsImgBackground {
+    filter: brightness(40%);
+}
+
+.playIcon {
+    cursor: pointer;
+    width: 150px;
+    height: 200px;
+    position:absolute;
+    transform: translateX(-50%) translateY(-50%);
+    left:50%;
+    top:50%;
+}
+
+.modalYouTube {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 1;
+}
+
+.closeModalYouTube {
+    position: absolute;
+    top: 0;
+    right: -50px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.containerForYouTube {
+    position: relative;
+}
