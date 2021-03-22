@@ -7,6 +7,7 @@ import FilmDetails from "./components/FilmDetails/FilmDetails";
 import {BrowserRouter as Router, Route, NavLink, Switch} from "react-router-dom";
 import Registration from './components/Registration/Registration';
 import Join from './components/Join/Join';
+import MovieDB from './MovieDB/MovieDB';
 
 export default class App extends React.Component {
     state = {
@@ -91,6 +92,16 @@ export default class App extends React.Component {
         ],
         searchFilter: '',
         inputEvent: ''
+    }
+
+    addFilmsToState = () => {
+        const toMovieDB = () => {
+        const movie = new MovieDB();
+        movie.getResource('3')
+            .then(res => {
+                console.log(res);
+            })
+        }
     }
 
     addNewComment = (id) => {
